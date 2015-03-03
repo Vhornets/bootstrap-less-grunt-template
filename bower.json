@@ -1,0 +1,15 @@
+{
+  "name": "bootstrap-less-grunt-template",
+  "description": "",
+  "version": "0.0.1",
+  "homepage": "http://",
+  "ignore": [
+    "/.*",
+    "composer.json"
+  ],
+  "dependencies": {
+    "jquery": "<= 1.9.1",
+    "owl.carousel": "*",
+    "bootstrap": ">= 3.3.2"
+  }
+}
