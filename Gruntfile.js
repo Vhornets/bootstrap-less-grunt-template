@@ -21,6 +21,8 @@ module.exports = function(grunt) {
             dist: {
                 files: {
                     'js/app.min.js': [
+                        '<%= bower %>/jquery/jquery.min.js',
+                        '<%= bower %>/bootstrap/dist/js/bootstrap.min.js',
                         '<%= bower %>/owl.carousel/dist/owl.carousel.min.js',
                         'js/app.js'
                     ]
