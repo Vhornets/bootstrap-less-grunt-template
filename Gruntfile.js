@@ -5,12 +5,10 @@ module.exports = function(grunt) {
 
         less: {
             options: {
-                includePaths: ['less/bootstrap']
+                includePaths: ['less/bootstrap'],
+                compress: true
             },
             dist: {
-                options: {
-                    outputStyle: 'compressed'
-                },
                 files: {
                     'css/style.css': 'less/app.less'
                 }
@@ -33,7 +31,7 @@ module.exports = function(grunt) {
         sprite: {
             all: {
                 src: 'img/sprite-source/*.png',
-                dest: 'img/spritesheet_1608.png',
+                dest: 'img/sprite_' + new Date().getTime() + '.png',
                 destCss: 'less/sprite.less',
                 padding: 5,
                 algorithm: 'binary-tree'
