@@ -10,6 +10,7 @@
   "dependencies": {
     "jquery": "<= 1.9.1",
     "owl.carousel": "*",
-    "bootstrap": ">= 3.3.2"
+    "bootstrap": ">= 3.3.2",
+    "jquery-validate": "*"
   }
 }
