@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 
         less: {
             options: {
-                includePaths: ['less/bootstrap'],
+                includePaths: ['<%= bower %>/less/bootstrap'],
                 compress: true
             },
             dist: {
