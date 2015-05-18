@@ -22,8 +22,8 @@ module.exports = function(grunt) {
                         '<%= bower %>/jquery/jquery.min.js',
                         '<%= bower %>/bootstrap/dist/js/bootstrap.min.js',
                         '<%= bower %>/owl.carousel/dist/owl.carousel.min.js',
-                        '<%= bower %>/jquery-validate/dist/jquery.validate.min.js',,
-                        'js/settings.js'
+                        '<%= bower %>/jquery-validate/dist/jquery.validate.min.js',
+                        'js/settings.js',
                         'js/app.js'
                     ]
                 }
