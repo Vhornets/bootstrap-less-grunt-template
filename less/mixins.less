@@ -128,3 +128,24 @@
     -moz-box-shadow: @value;
     box-shadow: @value;
 }
+
+.background-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.placeholder(@color, @weight: 300) {
+    ::-webkit-input-placeholder { color: @color; font-weight: @weight; }
+    :-moz-placeholder { color: @color; font-weight: @weight; }
+    :-ms-input-placeholder { color: @color; font-weight: @weight; }
+}
+
+.absolute-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}

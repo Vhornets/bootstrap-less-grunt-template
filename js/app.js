@@ -1,18 +1,27 @@
-// Инициализация каруселей по аттрибуту
-// В аттрибуте хранится строка, которая является ключом к объекту с опциями карусели
-$('[data-carousel]').each(function() {
-    var $self = $(this);
-    var opts = $self.data('carousel');
+var App = {
+    init: function() {
+        this.initCarousels();
+        this.validateForms();
+    },
 
-    $self.owlCarousel(settings[opts]);
-});
+    initCarousels: function() {
+        $('[data-carousel]').each(function() {
+            var $self = $(this);
+            var opts = $self.data('carousel');
 
-$('form').each(function() {
-    $(this).validate({
-        ignore: "",
+            $self.owlCarousel(settings[opts]);
+        });
+    },
 
-        submitHandler: function(form) {
-            $(form).trigger('form.valid');
-        }
-    });
-});
+    validateForms: function() {
+        $('form').each(function() {
+            $(this).validate({
+                ignore: "",
+
+                submitHandler: function(form) {
+                    $(form).trigger('form.valid');
+                }
+            });
+        });
+    },
+};
